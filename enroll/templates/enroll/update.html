@@ -1,0 +1,16 @@
+{% extends 'enroll/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="tow">
+        <h1 class="text-center alert alert-info"> Update page </h1>
+        <form action=""method="POST">
+            {% csrf_token %}
+            {{ forms.as_p }}
+            <input class="btn btn-outline-success" type="submit" value="Update">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
